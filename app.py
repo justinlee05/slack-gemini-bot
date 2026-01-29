@@ -127,7 +127,7 @@ def handle_mentions(body, say):
             model_name=GEMINI_MODEL,
             contents=contents,
             system_instruction=SLACK_CUSTOM_INSTRUCTIONS,
-            use_google_search=False,
+            use_google_search=True,
         )
 
         # If search is required, do a 2nd pass with google_search tool enabled
