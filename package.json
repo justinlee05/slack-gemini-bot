@@ -1,0 +1,25 @@
+{
+  "name": "slack-gemini-bot",
+  "version": "1.0.0",
+  "description": "Slack bot powered by Gemini AI",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "ts-node src/app.ts",
+    "watch": "tsc -w",
+    "format": "prettier --write \"src/**/*.{ts,js,json}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,js,json}\""
+  },
+  "dependencies": {
+    "@google/genai": "^1.39.0",
+    "@slack/bolt": "^4.6.0",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "prettier": "^3.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.0"
+  }
+}
